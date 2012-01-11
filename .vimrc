@@ -32,3 +32,24 @@ filetype plugin indent on
 
 " Highlight trailing whitespace
 match Todo /\s\+$/
+
+"
+" VAM, Vim Addon Manager
+" See https://github.com/MarcWeber/vim-addon-manager
+"
+fun SetupVAM()
+  let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
+  exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
+
+  if !filereadable(vam_install_path.'/vim-addon-manager/.git/config') && 1 == confirm("git clone VAM into ".vam_install_path."?","&Y\n&N")
+    " Install VAM from the Github repo
+    exec '!p='.shellescape(vam_install_path).'; mkdir -p "$p" && cd "$p" && git clone --depth 1 git://github.com/MarcWeber/vim-addon-manager.git'
+    exec 'helptags '.fnameescape(vam_install_path.'/vim-addon-manager/doc')
+  endif
+
+  call vam#ActivateAddons([
+    \ "snipmate",
+    \ "snipmate-snippets"
+    \ ], {'auto_install' : 0})
+endfun
+call SetupVAM()
