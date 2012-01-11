@@ -24,7 +24,7 @@ set noexpandtab
 set showcmd
 set ruler
 
-" Show line numbers on the right hand side
+" Show line numbers on the left hand side
 set number
 
 " Enabling loading of plugins and indent files
