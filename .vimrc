@@ -29,3 +29,6 @@ set number
 
 " Enabling loading of plugins and indent files
 filetype plugin indent on
+
+" Highlight trailing whitespace
+match Todo /\s\+$/
