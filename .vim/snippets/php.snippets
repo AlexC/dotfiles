@@ -10,6 +10,16 @@ snippet ko_header Personal
 	 */
 	${6}
 
+snippet ko_header General
+	<?php defined('SYSPATH') or die('No direct script access.');
+	/**
+	 * ${1}
+	 *
+	 * @author     ${2:Alex Cartwright} <${3:alex@openzula.org}>
+	 * @copyright  Copyright (c) `strftime('%Y')` ${4:OpenZula}
+	 */
+	${5}
+
 snippet ko_header OpenZula
 	<?php defined('SYSPATH') or die('No direct script access.');
 	/**
