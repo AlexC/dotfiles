@@ -33,6 +33,9 @@ filetype plugin indent on
 " Highlight trailing whitespace
 match Todo /\s\+$/
 
+" Vim max line width of 72
+au FileType gitcommit set tw=72
+
 "
 " VAM, Vim Addon Manager
 " See https://github.com/MarcWeber/vim-addon-manager
