@@ -10,6 +10,7 @@ set nowritebackup
 set noswapfile
 
 " Easier searching
+set ignorecase
 set smartcase
 set hlsearch
 
