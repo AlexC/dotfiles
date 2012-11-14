@@ -38,6 +38,11 @@ match Todo /\s\+$/
 au FileType gitcommit set tw=72
 
 "
+" Custom key bindings
+"
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+"
 " VAM, Vim Addon Manager
 " See https://github.com/MarcWeber/vim-addon-manager
 "
