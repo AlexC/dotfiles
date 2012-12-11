@@ -58,7 +58,8 @@ fun SetupVAM()
 
   call vam#ActivateAddons([
     \ "snipmate",
-    \ "snipmate-snippets"
+    \ "snipmate-snippets",
+    \ "fugitive"
     \ ], {'auto_install' : 0})
 endfun
 call SetupVAM()
