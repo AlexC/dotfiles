@@ -5,6 +5,8 @@
 	branch = auto
 	diff = auto
 	status = auto
+[log]
+	decorate = short
 [core]
 	excludesfile = ~/.gitignore-global
 	editor = vim
