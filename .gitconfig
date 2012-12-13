@@ -5,6 +5,7 @@
 	branch = auto
 	diff = auto
 	status = auto
+	grep = auto
 [log]
 	decorate = short
 [core]
