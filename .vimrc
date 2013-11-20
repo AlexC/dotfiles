@@ -58,7 +58,8 @@ fun SetupVAM()
 
   call vam#ActivateAddons([
     \ "better-snipmate-snippet",
-    \ "fugitive"
+    \ "fugitive",
+    \ "YouCompleteMe"
     \ ], {'auto_install' : 0})
 endfun
 call SetupVAM()
