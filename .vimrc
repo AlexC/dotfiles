@@ -59,6 +59,7 @@ fun SetupVAM()
   call vam#ActivateAddons([
     \ "better-snipmate-snippet",
     \ "fugitive",
+    \ "localvimrc",
     \ "YouCompleteMe"
     \ ], {'auto_install' : 0})
 endfun
