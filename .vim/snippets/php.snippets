@@ -1,32 +1,34 @@
-# Header
-snippet ko_header Personal
-	<?php defined('SYSPATH') or die('No direct script access.');
-	/**
-	 * ${1}
-	 *
-	 * @author     ${2:Alex Cartwright} <${3:alexc223@gmail.com}>
-	 * @copyright  Copyright (c) `strftime('%Y')` ${4:$2}
-	 * @license    ${5:BSD 3-Clause License, see LICENSE file}
-	 */
-	${6}
+snippet ko_header_bsd "KO header BSD" !b
+<?php defined('SYSPATH') or die('No direct script access.');
+/**
+ * ${1}
+ *
+ * @author     ${2:Alex Cartwright} <${3:alexc223@gmail.com}>
+ * @copyright  Copyright (c) `date +%Y` ${4:$2}
+ * @license    ${5:BSD 3-Clause License, see LICENSE file}
+ */
+${6}
+endsnippet
 
-snippet ko_header General
-	<?php defined('SYSPATH') or die('No direct script access.');
-	/**
-	 * ${1}
-	 *
-	 * @author     ${2:Alex Cartwright} <${3:alex@openzula.org}>
-	 * @copyright  Copyright (c) `strftime('%Y')` ${4:OpenZula Ltd}
-	 */
-	${5}
+snippet ko_header_nolicense "KO header no license" !b
+<?php defined('SYSPATH') or die('No direct script access.');
+/**
+ * ${1}
+ *
+ * @author     ${2:Alex Cartwright} <${3:alex@openzula.org}>
+ * @copyright  Copyright (c) `date +%Y` ${4:OpenZula Ltd}
+ */
+${5}
+endsnippet
 
-snippet ko_header OpenZula
-	<?php defined('SYSPATH') or die('No direct script access.');
-	/**
-	 * ${1}
-	 *
-	 * @author     ${2:Alex Cartwright} <${3:alex@openzula.org}>
-	 * @copyright  Copyright (c) `strftime('%Y')` ${4:OpenZula Ltd}
-	 * @license    ${5:http://openzula.org/license-bsd-3c BSD 3-Clause License}
-	 */
-	${6}
+snippet ko_header_oz_bsd "KO header OpenZula BSD" !b
+<?php defined('SYSPATH') or die('No direct script access.');
+/**
+ * ${1}
+ *
+ * @author     ${2:Alex Cartwright} <${3:alex@openzula.org}>
+ * @copyright  Copyright (c) `date +%Y` ${4:OpenZula Ltd}
+ * @license    ${5:http://openzula.org/license-bsd-3c BSD 3-Clause License}
+ */
+${6}
+endsnippet

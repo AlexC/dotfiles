@@ -57,10 +57,16 @@ fun SetupVAM()
   endif
 
   call vam#ActivateAddons([
-    \ "better-snipmate-snippet",
+    \ "UltiSnips",
     \ "fugitive",
     \ "localvimrc",
     \ "YouCompleteMe"
     \ ], {'auto_install' : 0})
 endfun
 call SetupVAM()
+
+" Change UltiSnips bindings so they don't conflict with YouCompleteMe
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
