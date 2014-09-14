@@ -59,7 +59,6 @@ fun SetupVAM()
   call vam#ActivateAddons([
     \ "UltiSnips",
     \ "fugitive",
-    \ "localvimrc",
     \ "YouCompleteMe"
     \ ], {'auto_install' : 0})
 endfun
